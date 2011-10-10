@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <pt.ua.code.favouritetv.gui.MyMap
+  				 android:id="@+id/mapview"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:enabled="true"
+        		 android:clickable="true"
+                 android:apiKey="0Q2hTKUhZi2dH1oMGwXeth3G3PUCxBFVlyUc9Qg"
+                 android:layout_marginBottom="45dip"
+                 />
+ <RelativeLayout
+  		android:id="@+id/programfooter"
+        android:layout_marginTop="-45dip" 
+        android:padding="0dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|right" 
+        android:background="@android:drawable/bottom_bar"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <Button
+            android:id="@+id/mapa_gps"
+            android:text="@string/GPS"
+            android:minWidth="100sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/gps"
+            android:layout_marginBottom="-4dip" 
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="false" 
+            />
+        
+        <Button
+            android:id="@+id/mapa_maps_conf"
+            android:text="@string/Maps"
+            android:minWidth="100sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:drawableRight="@drawable/maps"
+            android:layout_marginBottom="-4dip" 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false" 
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:enabled="true" android:visible="true" android:id="@+id/groupConfig">
+        <item android:id="@+id/itemHome" android:title="Casa" android:visible="true" android:enabled="true"></item>
+        <item android:id="@+id/itemFavoritos" android:title="Canais Favoritos" android:titleCondensed="Canais" android:visible="true" android:enabled="true"></item>
+    </group>
+</menu>

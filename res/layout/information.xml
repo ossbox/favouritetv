@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="300dip"
+  android:layout_height="400dip"
+  android:orientation="vertical">
+	  <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="match_parent"
+	  android:layout_height="36dip"
+	  android:layout_marginLeft="5dip"
+	  android:orientation="horizontal">
+		  <TextView android:layout_width="80dip"
+		  android:layout_height="wrap_content"
+		  android:text="@string/IName" android:textSize="16dip"
+		  android:textStyle="bold">
+		  </TextView>
+		  <TextView android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:text="Programa 1 " android:textSize="16dip"
+		  android:id="@+id/txtInfoName"
+		  >
+		  </TextView>
+  	  </LinearLayout>
+  	  <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="match_parent"
+	  android:layout_height="36dip"
+	  android:layout_marginLeft="5dip"
+	  android:orientation="horizontal">
+		  <TextView android:layout_width="80dip"
+		  android:layout_height="wrap_content"
+		  android:text="@string/IInicio" android:textSize="16dip"
+		  android:textStyle="bold">
+		  </TextView>
+		  <TextView android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:text="23:59:59" android:textSize="16dip"
+		  android:id="@+id/txtInfoStart"
+		  >
+		  </TextView>
+  	  </LinearLayout>
+  	  <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="match_parent"
+	  android:layout_height="36dip"
+	  android:layout_marginLeft="5dip"
+	  android:orientation="horizontal">
+		  <TextView android:layout_width="80dip"
+		  android:layout_height="wrap_content"
+		  android:text="@string/IFim" android:textSize="16dip"
+		  android:textStyle="bold">
+		  </TextView>
+		  <TextView android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:text="23:59:59" android:textSize="16dip"
+		  android:id="@+id/txtInfoEnd"
+		  >
+		  </TextView>
+  	  </LinearLayout>
+  	  <TextView android:layout_width="80dip"
+	  android:layout_height="26dip"
+	  android:text="@string/IDescricao" android:textSize="16dip"
+	  android:layout_marginLeft="5dip"
+	  android:textStyle="bold">
+	  </TextView>
+	  <TextView android:layout_width="match_parent"
+	  android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+	  android:text="info" android:textSize="16dip"
+	  android:id="@+id/txtInfoDescription"
+	  >
+	  </TextView>
+</LinearLayout>

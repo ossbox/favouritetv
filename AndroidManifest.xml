@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="pt.ua.code.favouritetv"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <!-- for channel web service -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- for alerter service -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission  android:name="android.permission.READ_CALENDAR"/>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <application android:icon="@drawable/channel_tv" android:label="@string/app_name">
+    	<uses-library android:name="com.google.android.maps" />
+        <activity android:name="FavouriteTV"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Map"
+                  android:label="@string/home">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SelectChannels"
+                  android:label="@string/selectfavourite">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Programs"
+                  android:label="@string/programs_home">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".service.ContextStartup">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.NotificationAlarm">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".service.ContextAlerter">
+            <intent-filter>
+                <action android:name="pt.ua.code.favouritetv.service.ContextAlerter" />
+            </intent-filter>
+        </service>
+        <provider android:name="pt.ua.code.favouritetv.content.FavouriteTvProvider" android:label="pt.ua.code.favouritetv.content.FavouriteTvProvider" android:authorities="pt.ua.code.favouritetv.content.FavouriteTvProvider" android:exported="true"></provider>
+    </application>
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Favourite TV</string>
+    <string name="home">Casa</string>
+    <string name="selectfavourite">Seleccione os teus favoritos!</string>
+    <string name="homefavourite">Meus canais favoritos:</string>
+    <string name="setup_footer">Programas</string>
+    <string name="next_action">Próximo</string>
+    <string name="programs_home">Programação</string>
+    <string name="prev_action">Anterior</string>
+    <string name="post">Wall Post!</string>
+    <string name="notificationInitialString">O programa</string>
+    <string name="notificationMiddleString">começa dentro de</string>
+    <string name="notificationFinalString">minutos!</string>
+    <string name="Casa">Casa!</string>
+    <string name="GPS">Gps</string>
+    <string name="Maps">Mapa</string>
+    <string name="HelloCasa">Moro aqui!</string>
+    <string name="Canais">Canais</string>
+    <string name="IName">Nome: </string>
+    <string name="IInicio">Início: </string>
+    <string name="IFim">Fím: </string>
+    <string name="IDescricao">Descrição: </string>
+</resources>

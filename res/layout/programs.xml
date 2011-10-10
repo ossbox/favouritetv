@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  <ListView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="54dip"
+    android:id="@+id/listPrograms" 
+    android:padding="6dip"
+    android:fadingEdge="none">
+  </ListView>
+  <RelativeLayout
+  		android:id="@+id/programfooter"
+        android:layout_marginTop="-45dip" 
+        android:padding="0dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|right" 
+        android:background="@android:drawable/bottom_bar"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <Button
+            android:id="@+id/prev_program"
+            android:text="@string/prev_action"
+            android:minWidth="100sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/button_indicator_prev"
+            android:layout_marginBottom="-4dip" 
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="false" 
+            />
+        <pt.ua.code.favouritetv.gui.FViewFlipper android:id="@+id/program_flipper_date"
+            android:minWidth="100sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="-4dip" 
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false" >
+            <TextView android:text="Segunda" android:layout_marginLeft="10dip" android:layout_gravity="center_horizontal|center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/idTextViewDay"></TextView>
+			<TextView android:text="11/05/2011" android:layout_marginLeft="10dip" android:layout_gravity="center_horizontal|center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/idTextViewDate"></TextView>
+        </pt.ua.code.favouritetv.gui.FViewFlipper>
+        <Button
+            android:id="@+id/next_program"
+            android:text="@string/next_action"
+            android:minWidth="100sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:drawableRight="@drawable/button_indicator_next"
+            android:layout_marginBottom="-4dip" 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false" 
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   <group android:visible="true" android:enabled="true" android:checkableBehavior="single" android:id="@+id/groupView">
+	   <item android:visible="true" android:enabled="true" android:checked="false" android:title="Satélite" android:id="@+id/itemSatelite"></item>
+   	   <item android:visible="true" android:enabled="true" android:checked="true" android:title="Estrada" android:id="@+id/itemEstrada"></item>
+   </group>
+</menu>

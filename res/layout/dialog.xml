@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:paddingLeft="15px"
+  android:layout_width="280dip"
+  android:layout_height="110dip" android:orientation="vertical">
+  <TextView android:gravity="top" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtDialog" android:text="Pretende adicionar a informação no facebook?"/>
+  <LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="horizontal"
+  >
+  <Button android:layout_marginLeft="80dip" android:layout_gravity="right|bottom" android:id="@+id/btnCancel" android:text="Cancel" android:layout_width="90dip" android:layout_height="wrap_content" />
+  <Button android:layout_gravity="right|bottom" android:id="@+id/btnOk" android:text="Ok" android:layout_width="90dip" android:layout_height="wrap_content"/>
+  </LinearLayout>
+  
+</LinearLayout>

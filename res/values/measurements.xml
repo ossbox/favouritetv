@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="gpsUpdatesMinTime">600000</integer> <!-- every 10 minutes -->
+    <integer name="gpsUpdatesMinDistance">100</integer> <!-- every 100 meters -->
+    <integer name="minNotificationTime">5</integer> <!-- 5 minutes -->
+    <integer name="maxNotificationTime">120</integer> <!-- 2 hours -->
+    <integer name="maxNotificationDistance">50000</integer> <!-- after 50 000 meters, the notification time is maxNotificationTime -->
+</resources>
